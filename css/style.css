@@ -1,4 +1,9 @@
 
+.my_size{
+    font-size: .5rem;
+}
+
+
 
 .my_logo-mobile{
     width: 50px;
@@ -12,8 +17,7 @@
 .my_navbar-column{
     background-color: #051e34;
     height: 600px;
-    width: 15%;
-    
+    width: 150px;
 }
 
 

@@ -23,7 +23,7 @@
     <header>
         <div class="container-fluid">
             <div class="row align-items-center white">
-                <div class="col-3">
+                <div class="col-3 d-flex justify-content-center">
                     <img src="img/mobile-logo.png" alt="logo boolean piccolo" class="my_logo-mobile d-lg-none my-2">
                     <img src="img/logo.svg" alt="logo boolean" class="d-none d-lg-block my-3">
                 </div>
@@ -41,14 +41,26 @@
                 </div>
             </div>
         </div>
-        <!-- desktop: si aggiungono delle icone a destra -->
     </header>
 
     <!-- main diviso in 3 parti -->
-    <main class="d-flex">
+    <main class="d-flex container-fluid">
         <!-- barra di navigazione laterale verticale a sx con background colorato-->
-        <section class="my_navbar-column d-flex">
-            
+        <section class="my_navbar-column">
+            <div class="container-fluid text-white ">
+                <div class="row flex-column">
+                    <div class="col my-4 d-flex justify-content-center">
+                        <i class="fa-solid fa-house d-inline fs-4 mx-2"></i><span class="d-none d-lg-inline-block">Home</span>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <i class="fa-solid fa-chart-simple fs-4 mx-2"></i></i>
+                        <span class="d-none d-lg-inline-block">Stats</span>
+                    </div>
+                    <div class="col mb-4 d-flex justify-content-center">
+                        <i class="fa-solid fa-signal d-inline fs-5 mx-2"></i><span class="d-none d-lg-inline-block">Signals</span>
+                    </div>
+                </div>
+            </div>
             <!-- 3 icone una sotto l'altra -->
             <!-- alla fine della nav altra icona -->
             <!-- tablet: si riduce di poco la larghezza della barra e delle icone, il resto non cambia -->
@@ -90,3 +102,21 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- <div class="col-4 ">
+    <i class="fa-solid fa-house fs-4 my-4"></i><span class="d-none d-lg-inline-block">Home</span>
+</div>
+<div class="col-4">
+    <i class="fa-solid fa-chart-simple fs-4 mb-4"></i><span class="d-none d-lg-inline-block">Stats</span>
+</div>
+<div class="col-4">
+
+    <i class="fa-solid fa-signal fs-4"></i><span class="d-none d-lg-inline-block">Signals</span>
+</div> -->
