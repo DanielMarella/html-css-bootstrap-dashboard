@@ -1,0 +1,24 @@
+
+header{
+    background-color: orange;
+    height: 100px;
+}
+
+.my_navbar-column{
+    background-color: #051e34;
+    height: 600px;
+    width: 15%;
+    
+}
+
+.my_container-information{
+    background-color: #1b72e8;
+    height: 200px;
+    width: 100%;
+}
+
+.my_container-card{
+    background-color: red;
+    width: 100%;
+    height: calc(600px - 200px)
+}
