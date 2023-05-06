@@ -16,8 +16,8 @@
 
 .my_navbar-column{
     background-color: #051e34;
-    height: 600px;
     width: 150px;
+    height: 600px;
 }
 
 
@@ -32,3 +32,10 @@
     width: 100%;
     height: calc(600px - 200px)
 }
+
+
+.my_height{
+    height: 400px;
+}
+
+
