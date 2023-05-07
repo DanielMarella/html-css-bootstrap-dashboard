@@ -44,7 +44,7 @@
     </header>
 
     <!-- main diviso in 3 parti -->
-    <main class="d-flex container-fluid ">
+    <main class="d-flex">
         <!-- barra di navigazione laterale verticale a sx con background colorato-->
         <section class="my_navbar-column">
             <div class="container-fluid text-white ">
@@ -61,22 +61,22 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid text-white my_height d-flex align-items-end justify-content-center">
-                <div class="row  justify-content-center align-items-center">
-                    <div class="col-12 ">
-                        <i class="fa-solid fa-gear d-inline fs-5 mx-2 "></i><span class="d-none d-lg-inline-block">Admin</span>
-                    </div>
-                </div>
-            </div>
-            <!-- 3 icone una sotto l'altra -->
-            <!-- alla fine della nav altra icona -->
-            <!-- tablet: si riduce di poco la larghezza della barra e delle icone, il resto non cambia -->
-            <!-- desktop: la nav si espande in larghezza, viene aggiunto un effetto al background, appaiono i nomi alle icone -->
         </section>
 
-        <section class="my_container w-100">
+        <section class="my_container w-100 ">
             <!-- barra di informazioni background colorato -->
-            <div class="my_container-information">
+            <div class="my_container-information text-white">
+
+                <div class="my_new-student">
+                    <h5>Nuovo Studente</h5>
+                </div>
+                <div class="my_new-student">
+                    <h3>Boolean</h3>
+                </div>
+                <div class="my_online-student">
+                    <h5>Studenti online negli ultimi 30 minuti</h5>
+                </div>
+
                 <!-- overflow -->
                 <!-- tutto in colonna -->
                 <!-- h5 con bottone a seguire che apre la dashboard -->
@@ -87,7 +87,107 @@
                 <!-- desktop: come tablet, ma si aggiunge del testo col background colorato all'inizio -->
             </div>
             
-            <div class="my_container-card">
+            <div class="my_container-card ">
+                <div class="card text-bg-light mb-3">
+                    <div class="card-header">Prossime classi</div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col" class="d-none d-lg-table-cell"> Data Inizio</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col" class="ps-4">Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 75</th>
+                                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-success" disabled>Done</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 76</th>
+                                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-success" disabled>Done</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 77</th>
+                                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-warning" disabled>Process</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 78</th>
+                                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-success" disabled>Done</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 79</th>
+                                        <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-danger" disabled>Failed</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 80</th>
+                                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-success" disabled>Done</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 81</th>
+                                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-danger" disabled>failed</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><img src="img/class-avatar.jpg" class="my_width-img" alt="avatar classe"> Classe 82</th>
+                                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                                        <td class="d-none d-lg-table-cell">20%</td>
+                                        <td><button type="button" class="btn btn-secondary btn-sm btn-success" disabled>Done</button></td>
+                                        <td><button class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-trash"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                        <div class="card text-bg-light mb-3">
+                            <div class="card-header">F.A.Q</div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Come aggiungere un nuovo studente?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Come posso accedewre alle informazioni del mio account?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Posso usare questa dashboard da mobile?<td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                 <!-- overflow -->
                 <!-- 4 card tutte in colonna -->
                 <!-- ogni card ha un header  -->
