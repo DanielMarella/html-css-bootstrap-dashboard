@@ -1,9 +1,13 @@
+body{
+    height: 100vh;
+}
+
 .my_font-size{
     font-size: .8rem;
 }
 
 .my_height{
-    height: 100vh;
+    height: 93.5vh;
 }
 
 .overflow{
@@ -21,6 +25,7 @@
 
 .my_navbar-column{
     background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
     width: 10%;
 }
 

@@ -43,10 +43,8 @@
         </div>
     </header>
 
-    <!-- main diviso in 3 parti -->
-    <main class="d-flex">
-        <!-- barra di navigazione laterale verticale a sx con background colorato-->
-        <section class="my_navbar-column">
+    <main class="d-flex my_height">
+        <section class="my_navbar-column my_height d-flex flex-column justify-content-between sticky-left">
             <div class="container-fluid text-white ">
                 <div class="row flex-column">
                     <div class="col  my-4 d-flex justify-content-center">
@@ -61,9 +59,14 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid text-white mb-5">
+                <div class="col d-flex justify-content-center">
+                    <i class="fa-solid fa-gear d-inline fs-5 mx-2"></i><span class="d-none d-lg-inline-block">Admin</span>
+                </div>
+            </div>
         </section>
 
-        <section class="my_container my_height overflow w-100">
+        <section class="my_container overflow w-100">
             <div class="my_container-information text-white pt-3">
                 <div class="container-fluid my_width student ">
                     <div class="my_new-student d-flex">
@@ -238,7 +241,7 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <img src="img/stats.jpeg" alt="Statistics" class="w-100">
+                                                <img src="img/stats.jpeg" alt="Statistics" class="w-75 pt-5">
                                                 <h4>Utenti attivi</h4>
                                                 Lista degli utenti attivi in piattaforma nell'ultimo mese
                                             </td>
