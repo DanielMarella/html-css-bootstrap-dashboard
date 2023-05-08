@@ -79,7 +79,63 @@
                 <div class="container-fluid my_width student ">
                     <div class="my_new-student d-flex">
                         <h5>Nuovo Studente</h5>
-                        <button type="button" class="btn btn-outline-light mx-5"><i class="fa-regular fa-plus"></i></button>
+                        <button class="btn btn-outline-light mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-regular fa-plus"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end text-black" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="Student-name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="surname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="Student-surname">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="Email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="Student-email">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="Student-password">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="city" class="form-label">Citta</label>
+                                        <input type="text" class="form-control" id="Student-city">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="State" class="form-label">Stato</label>
+                                        <select id="State" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="cap" class="form-label">Cap</label>
+                                        <input type="text" class="form-control" id="cap">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                            Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
