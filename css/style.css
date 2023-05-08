@@ -1,8 +1,4 @@
 
-.my_size{
-    font-size: .5rem;
-}
-
 .my_logo-mobile{
     width: 50px;
     height: 50px;
@@ -14,16 +10,11 @@
 
 .my_navbar-column{
     background-color: #051e34;
-    width: 120px;
+    width: 10%;
 }
-
 
 .my_container-information{
     background-color: #1b72e8;
-    width: 100%;
-}
-
-.my_container-card{
 }
 
 .my_width-img{
@@ -32,4 +23,38 @@
 
 .my_btn-green{
     background-color: #3f8556;
+}
+
+.my_container-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.my_column-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my_column-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+
+    .my_container-card{
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .my_column-left{
+    width: 60%;
+    }
+
+    .my_column-right{
+        width: 40%;
+    }
+
 }
