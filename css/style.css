@@ -1,3 +1,7 @@
+.my_font-size{
+    font-size: .8rem;
+}
+
 
 .my_logo-mobile{
     width: 50px;
@@ -15,6 +19,9 @@
 
 .my_container-information{
     background-color: #1b72e8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .my_width-img{
@@ -42,6 +49,11 @@
     flex-direction: column;
 }
 
+.my_round-background{
+    background-color: #3557b7;
+    border-radius: 20px;
+}
+
 @media screen and (min-width: 992px) {
 
     .my_container-card{
@@ -57,4 +69,24 @@
         width: 40%;
     }
 
+
 }
+
+@media screen and (min-width: 768px) {
+    
+    .my_container-information{
+        flex-direction: row;
+    }
+    
+    .my_width{
+        width: calc(100% / 3);
+    }
+
+    .student{
+        order: 1;
+    }
+
+}
+
+
+
