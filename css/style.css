@@ -2,6 +2,13 @@
     font-size: .8rem;
 }
 
+.my_height{
+    height: 100vh;
+}
+
+.overflow{
+    overflow-y: scroll;
+}
 
 .my_logo-mobile{
     width: 50px;
